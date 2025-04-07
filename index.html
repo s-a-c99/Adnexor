@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adnexor: Positive Impact Ads - Chrome Extension</title>
+	<meta name="description" content="Adnexor Positive Impact Ads is a Chrome Extension that filters out all the negative ads from your browsing experience.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    
+    <style type="text/css">
+  #contact form label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  #contact form input[type="email"] {
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 0;
+  }
+
+  #contact form input[type="submit"] {
+    height: 50px;
+    font-size: 16px;
+    border-radius: 0;
+    padding: 10px 20px;
+  }
+
+      
+  #popup {
+			display: none;
+			position: fixed;
+			z-index: 1000;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.8);
+			color: white;
+			text-align: center;
+			padding: 0px;
+		}
+
+		#popup-content {
+			background-color: #333;
+			padding: 0px;
+			border-radius: 10px;
+			max-width: 800px;
+			margin: auto;
+		}
+
+		#popup button {
+			margin-top: 20px;
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: white;
+			border: none;
+			border-radius: 5px;
+		}
+</style>	
+  
+    <script type="text/javascript">
+		window.onload = function() {
+			document.getElementById('popup').style.display = 'block';
+		}
+
+		function closePopup() {
+			document.getElementById('popup').style.display = 'none';
+		}
+	</script>
+	<script type="text/javascript">
+		window.onload = function() {
+			document.getElementById('popup').style.display = 'block';
+		}
+
+		function closePopup() {
+			document.getElementById('popup').style.display = 'none';
+		}
+	</script>
+</head>
+<body>
+    <div id="popup">
+		<div id="popup-content">
+			<h2>Please read - Adnexor Mission Statement</h2>
+			<h2>[pre-Trump situation]</h2>
+			<p>
+				After witnessing the stark reality of homelessness in San Francisco, I felt compelled to share some critical insights.
+				<br><br>
+				What I discovered deeply troubled me. The current system, designed to help those in need, has become intertwined with bureaucratic inefficiency and institutional failures. Consider these facts:
+				<br><br>
+				<ul>
+					<li>The city has demonstrated it can clean streets and improve public spaces quickly - as seen during the APEC summit - but it chooses not to maintain this standard year-round.</li>
+					<li>Local businesses struggle with security concerns, while response times remain problematic.</li>
+					<li>The stark contrast between what San Francisco could be and its current state is striking. The city has shown it can transform rapidly when motivated, as demonstrated during diplomatic visits. This reveals a fundamental truth: many of these challenges are solvable with proper governance and accountability.</li>
+				</ul>
+				<br>
+				Adnexor's vision has evolved beyond simply connecting ads to charitable donations. We believe real change requires:
+				    <ul>
+				        <li>Direct support for evidence-based recovery and treatment programs</li>
+				        <li>Transparency in how resources are allocated and used</li>
+				        <li>Community-driven solutions that prioritize measurable outcomes</li>
+				        <li>Supporting initiatives that demonstrate clear, tangible results</li>
+				    </ul>
+				The commitment to creating a positive impact remains, but with a deeper understanding of the systemic changes needed for lasting solutions. Adnexor is currently on standby...
+			</p>
+			<button onclick="closePopup()">Close</button>
+		</div>
+	</div>
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+               <img src="https://i.imgur.com/ShAsIKm.png" alt="Logo di Adnexor" class="d-inline-block align-text-top" width="30">
+               Adnexor
+            </a>
+
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#features">Features</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Benefits">Benefits</a>
+					</li>
+                  	<li class="nav-item">
+						<a class="nav-link" href="#Benefits">FAQ</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+  </nav>
+	
+	<!-- Hero Section -->
+	<section class="hero-section">
+		<div class="container-fluid">
+			<div class="row align-items-center">
+				<div class="col-lg-6 col-md-4 text-center mb-4">
+					<h1 class="mb-4"><img src="https://i.imgur.com/ShAsIKm.png" alt="Logo di Adnexor" class="d-inline-block align-text-top" width="55">ADNEXOR, the tool that provides you only impactful ads to HELP HOMELESS PEOPLE OFF THE STREETS.</h1>
+					<p class="mb-4">Connect the ads you see with funding NGO and non-profit organizations projects.</p>
+					<h2 class="text-center mb-5">The main goal of Adnexor is to solve the issue it faces, hoping to become unnecessary as soon as possible.</h2>
+					<div class="cta-buttons">
+						<a href="https://chrome.google.com/webstore/detail/adnexor/hfnfonfpfgolajocanpgbedfjilmlbal?hl=fr" target="_blank" class="btn btn-primary" role="button">get Adnexor now</a>
+						<a href="#features" class="btn btn-secondary" role="button">Learn More</a>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-4 text-center mb-4">
+                     <img src="https://images.pexels.com/photos/2104742/pexels-photo-2104742.jpeg" alt="San Francisco" class="img-fluid" style="max-width: 650px;">
+                </div>
+			</div>
+		</div>
+	</section>
+	<p></p>
+  <p></p>
+	<!-- Features Section -->
+<section id="features" class="features-section">
+	<div class="container">
+		<h2 class="text-center mb-5">Features</h2>
+		<div class="row">
+			<div class="col-lg-4 col-md-6 text-center mb-4">
+				<div class="feature-card">
+					<div class="card-icon">
+						<i class="bi bi-lightbulb"></i>
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Positive Impact Ads Only</h5>
+						<p class="card-text">Make the difference in your browsing experience with new technology.</p>
+						<div class="card-img">
+							<img src="https://media.gettyimages.com/id/1223543021/fr/photo/homeless-woman-tara-lowe-hauls-her-belongings-after-street-cleaning-came-through-to-clean.jpg?s=612x612&w=0&k=20&c=DgaSwMWiIOJ7LO_NVJ-_vF4HvN8NCf9HmaqdM8rlRRQ=" alt="Homeless 1" class="img-fluid" style="max-height:200px;">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 text-center mb-4">
+				<div class="feature-card">
+					<div class="card-icon">
+						<i class="bi bi-shield-check"></i>
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Empowering Users</h5>
+						<p class="card-text">Regain control of the attention, which everyone on the web is constantly trying to capture.</p>
+						<div class="card-img">
+							<img src="https://media.gettyimages.com/id/1321842114/fr/photo/members-of-the-san-francisco-police-departments-homeless-outreach-unit-along-folsom-near18th.jpg?s=612x612&w=0&k=20&c=AEOFqzZatl-ksNI45iWk14tPkKGDgEcAdZD7l82DdVY=" alt="Homeless 2"  style="aspect-ratio:16/10; height:197px;">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 text-center mb-4">
+				<div class="feature-card">
+					<div class="card-icon">
+						<i class="bi bi-check-circle"></i>
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">End-to-End Solution</h5>
+						<p class="card-text">Built to reinvent web surfing and make free donations effortless.</p>
+						<div class="card-img">
+                          <img src="https://media.gettyimages.com/id/1223542139/fr/photo/homeless-people-gather-on-willow-street-in-the-tenderloin-on-wednesday-may-6-2020-in-san.jpg?s=612x612&w=0&k=20&c=91x1M6OuMmb2XvBjQM_ArAix3auZvswD3enVg-ut_Vw=" alt="Homeless 2"  style="aspect-ratio:16/10; height:197px;">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	<p></p>
+  <p></p>
+	<!-- Benefits Section -->
+	<section id="Benefits" class="Benefits-section">
+		<div class="container">
+			<h2 class="text-center mb-5">Benefits</h2>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 text-center mb-4">
+					<div class="Benefits-card d-flex flex-column">
+						<div class="card-header">
+							<h5>You</h5>
+						</div>
+						<div class="card-body flex-grow-1">
+							<p>You can contribute to an important cause and make a difference in people's lives.</p>
+							<p>You can participate in the relief of your local community and feel part of a movement for change.</p>
+							<p>An easy-to-use experience that changes the way you view advertising, giving it an additional meaning.</p>
+						</div>
+						<div class="card-footer">
+							<a href="https://chrome.google.com/webstore/detail/adnexor/hfnfonfpfgolajocanpgbedfjilmlbal?hl=fr" target="_blank" class="btn btn-primary" role="button">get Adnexor now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center mb-4">
+					<div class="Benefits-card d-flex flex-column">
+						<div class="card-header">
+							<h5>People Aided</h5>
+						</div>
+						<div class="card-body flex-grow-1">
+							<p>Transform lives by providing support to homeless individuals and families.</p>
+							<p>Use ads to level up the human condition by helping provide access to food, shelter, and basic needs.</p>
+							<p>Riabilitate people in need by supporting community programs that aid in job training and education.</p>
+							<p>Provide mental health and addiction support services to transform and improve lives.</p>
+						</div>
+						<div class="card-footer">
+							<a href="https://chrome.google.com/webstore/detail/adnexor/hfnfonfpfgolajocanpgbedfjilmlbal?hl=fr" target="_blank" class="btn btn-primary" role="button">get Adnexor now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center mb-4">
+					<div class="Benefits-card d-flex flex-column">
+						<div class="card-header">
+							<h5>Community</h5>
+						</div>
+						<div class="card-body flex-grow-1">
+							<p>Improve public spaces for better quality of life for people and the well-being of the community where they live and work.</p>
+							<p>You can contribute to creating safer and welcoming neighborhoods for all residents through community-based programs and initiatives.</p>
+							<p>You can promote a sense of community and engagement, encouraging an indirect but active participation in public life.</p>
+							<p>You can support and protect the efforts of NGOs and NPOs, to maintain the goals they have achieved, giving them the possibility to advance towards future ones.</p>
+						</div>
+						<div class="card-footer">
+							<a href="https://chrome.google.com/webstore/detail/adnexor/hfnfonfpfgolajocanpgbedfjilmlbal?hl=fr" target="_blank" class="btn btn-primary" role="button">get Adnexor now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<p></p>
+  
+  
+  <!-- FAQ Section -->
+<section id="faq" class="faq-section">
+  <div class="container">
+    <h2 class="text-center mb-5">FAQ</h2>
+    <div class="accordion" id="faqAccordion">
+      
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="col-lg-12 col-md-8 text-center mb-8">
+            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              What is Adnexor?
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+          <div class="card-body" class="col-lg-12 col-md-8 text-center mb-8">
+            Adnexor is an impact-driven AdTech startup. It uses a browser extension that allows users to support NGO and NPO programs and initiatives by viewing ads while browsing the web. Every time a user views an ad, a portion of the revenue generated goes towards supporting organizations and charities. 
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="col-lg-12 col-md-8 text-center mb-8">
+            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              What is the inspiration behind Adnexor?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+          <div class="card-body" class="col-lg-12 col-md-8 text-center mb-8">
+            With the goal of empowering the user, who selectively chooses to see only positive impact advertising or none at all, we aim to make it a useful tool that requires no effort and is free.
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="col-lg-12 col-md-8 text-center mb-8">
+            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              How does Adnexor work?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#faqAccordion">
+          <div class="card-body">
+            Partner brands launch advertising campaigns to be viewed by Adnexor's users. Websites that join the initiative spread this advertising. A portion of the advertising campaign budget is directed towards a connected project of an NGO/NPO. Naturally, at least initially, there will be low levels of distribution that are acceptable, which will increase in a directly proportional manner to the number of users in the community. 
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<p></p>
+  <p></p>
+
+<!-- Contact Section -->
+	<section id="contact" class="contact-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 mb-4 mb-md-0">
+                  
+					
+<!--End mc_embed_signup-->
+				</div>
+				
+                  <div class="container text-center">
+					<div class="contact-info">
+                        <h5>To discuss investment opportunities and learn more about our company, please connect with us at: </h5>
+                        <p>contact@adnexor.com</p>
+						<p><br></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Footer Section -->
+	<footer class="footer-section">
+		<div class="container text-center">
+			<p>&copy; 2023 - 2025 <img src="https://i.imgur.com/ShAsIKm.png" alt="Logo di Adnexor" class="d-inline-block align-text-top" width="25">Adnexor. All Rights Reserved.</p>
+		</div>
+	</footer>
+	<div id="awareness-popup"></div>
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+</body>
